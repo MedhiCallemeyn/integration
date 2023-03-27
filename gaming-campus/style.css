@@ -1,0 +1,295 @@
+/* IMPORT DES FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;500&family=Oswald:wght@500&display=swap');
+
+/* VARIABLE DES COULEURS  */
+:root{
+--buttonNav:#E0DFE1;
+--iconPartBG:#161516;
+--mainNewsBG:#F8F6F8;
+--violet:rgb(176, 49, 176);
+}
+
+/* STYLE APPLIQUER A TOUS LE DOCUMENT */
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MISE EN FORME BASIQUE DE CERTAINS ELEMENTS REPETER */
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* TAILLE MINIMUM EQUIVALENT A LECRAN UTILISEE */
+body{
+min-height: 100vh;
+}
+
+/* NAV ET SES ENFANTS  */
+nav{
+width:  80%;
+margin: 0 auto;
+padding: 1rem;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#language{
+  background: var(--buttonNav);
+  border-radius: 20px;
+  padding: 10px;
+}
+/* INTEGRATION DE L'IMAGE DE FOND ET GESTION DU HEADER */
+header{
+background:url(./assets/img/bg.jpg) center/cover fixed;
+color:white;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 80px;
+}
+#logo{
+  text-align: center;
+}
+.main-header h1{
+  text-transform: uppercase;
+  font-weight:500;
+  padding: 25px;
+}
+
+/* BUTTON DU HEADER  */
+.main-header button{
+  display:block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border:1px solid grey;
+  cursor:pointer;
+  background:none;
+  color:white;
+  padding: 10px;
+}
+.main-header button:hover{
+  background: white;
+  color:grey;
+}
+
+/* DEUXIEME PARTIE DU HEADER  */
+.header-text{
+  width:  80%;
+margin: 0 auto;
+height: 10rem;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.header-text p{
+  font-size: 1.4rem;
+  color:gray;
+  text-align: center;
+  line-height: 2rem;
+  
+}
+
+/* TROISIEME PARTIE .ICON PART  */
+.icon-part{
+  background: var(--iconPartBG);
+  height: 35rem;
+  display: flex;
+align-items: center
+}
+.icon-part-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:  80%;
+  margin: 0 auto;
+}
+.list-icon-part{
+  text-align: center;
+  color:white;
+  width: 25%;
+}
+.lip-logo img{
+  width: 100%;
+}
+.list-icon-part h3{
+  margin: 10px;
+}
+.list-icon-part p{
+  margin: 20px;
+}
+.list-icon-part button{
+  margin: 10px;
+  text-transform: uppercase;
+  border:1px solid white;
+  color:white;
+  cursor:pointer;
+  background:none;
+  padding: 10px;
+}
+.list-icon-part button:hover{
+  background: white;
+  color:grey;
+}
+
+/* GESTION DE LA SECTION NEWSPART */
+
+.news-part{
+  background: var(--mainNewsBG);
+
+}
+.header-news{
+  width:  80%;
+  margin: 0 auto;
+  height: 8rem;
+  display: grid;
+  grid-template-columns:  70% 30%;
+  align-items: center;
+}
+.left-part h2{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+.left-part p{
+  font-weight: bold;
+}
+.right-part button{
+  text-transform: uppercase;
+  border:1px solid black;
+  color:black;
+  cursor:pointer;
+  background:none;
+  padding: 1rem;
+  letter-spacing: 2px;
+}
+.right-part button:hover{
+  background: black;
+  color:white;
+}
+.main-news-container{
+  width:  80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-news-card{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
+.main-news-card img{
+width: 100%;
+}
+.main-news-card h4{
+font-size: 1.4rem;
+margin: 10px 0;
+}
+.main-news-card p{
+  height: 13rem;
+  font-size: 1.1rem;
+}
+.link{
+  padding: 50px 0;
+}
+.link a{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* SECTION CONTACT */
+.contact{
+  width:  80%;
+  margin: 0 auto;
+}
+.contact-list{
+  margin:25px 0;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.list:nth-child(2),.list:nth-child(3),.copyright{
+  line-height: 30px;
+}
+.list:nth-child(3) p{
+  margin-bottom: 30px;
+}
+.list{
+  width: 90%;
+}
+h5{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.network{
+  margin-top: 30px;
+}
+.footer-logos{
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+.contact-medias{
+display: grid;
+grid-template-columns: 30% 70%;
+align-items: center;
+margin: 50px 0;
+}
+.medias-text h3::before{
+  position:absolute ;
+content:"";
+border:1px solid rgba(128, 128, 128, 0.487);
+width: 70%;
+text-align: center;
+left: 12%;
+}
+.medias-logos{
+  display: flex;
+  justify-content: space-around
+}
+footer{
+  background: black;
+  color:white;
+  height: 250px;
+}
+footer h3{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+footer ul li img{
+  width : 80px;
+  height : auto;
+}
+
+/* *********** MOBILE ****************** */
+
+@media screen and (max-width:720px){ 
+nav ul{
+display: block;
+text-align: center;
+}
+nav ul li{
+  margin: 10px 0;
+}
+}

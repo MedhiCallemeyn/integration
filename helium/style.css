@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@500&display=swap');
+:root{
+  --color1:white;
+  --color2:#474DFF;
+  --colorbg:#1E1D1E;
+  --colorFooter:#0E0C0E;
+}
+*{
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+p{
+  font-size: 0.8rem;
+}
+body{
+min-height: 100vh;
+background: var(--colorbg);
+color:var(--color1);
+}
+nav{
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+nav ul{
+  display: grid;
+  grid-template-columns:33% 33% 33%;
+  justify-items: end;
+}
+header{
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+.header-left{
+  display: grid;
+  align-content: space-evenly;
+}
+.header-left-container h1{
+  font-size: 7rem;
+}
+.header-left-container h2{
+color:var(--color2)
+}
+.header-right img{
+  width: 100%;
+}
+.info{
+  background:var(--colorFooter);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+h3{
+  font-size: 1.2rem;
+}
+.button-container{
+  display: grid;
+}
+button{
+  border: none;
+  border-radius: 10px;
+  background: var(--color2);
+  color:var(--color1);
+  width: 150px;
+  padding: 10px 0;
+  margin: 5px;
+  letter-spacing: 1px;
+  
+}
+.investors{
+  display: grid;
+  align-items: center;
+  height: 80%;
+}
+.img-container{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-items: center;
+}
+.img-container img{
+  width: 150px;
+}
+
+
+/* ***************** RESPONSIVE ******************* */
+
+/* ***************** MOBILE ( 480px a 720px)*********************** */
+@media screen and (max-width:720px){ 
+  nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  nav ul li{
+    font-size: 80%;
+  }
+  header{
+    display: block;
+  }
+  .header-left-container h1{
+    font-size: 2rem;
+  }
+  .info{
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .button-container{
+    justify-content: space-around
+  }
+  .img-container img{
+    width: 100px;
+  }
+}
+
+/* ***************** TAB (De 768 à 900 px pour les tablettes en mode portrait. De 900 à 1024 px pour les tablettes en mode paysage) *********************** */
+@media screen and (max-width: 950px){ 
+
+
+
+
+
+
+
+  .header-left-container h1 {
+    font-size: 2.5rem;
+}
+.header-left-container h2{
+  font-size: 1rem;
+}
+p{
+  font-size: 0.7;
+}
+}
